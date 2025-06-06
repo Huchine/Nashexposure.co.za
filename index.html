@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neshexposure Pty Ltd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      height: 60px;
+    }
+    nav {
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    
+.hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: bgFade 12s infinite alternate;
+}
+
+@keyframes bgFade {
+  0%   { background-image: url('bg1.jpg'); }
+  50%  { background-image: url('bg2.jpg'); }
+  100% { background-image: url('bg1.jpg'); }
+}
+
+    .content {
+      padding: 20px;
+    }
+    .contact, .booking {
+      background: #e9ecef;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .buttons a {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .buttons a:hover {
+      background: #0056b3;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    .fab {
+      background: #007bff;
+      color: white;
+      padding: 14px;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      font-size: 18px;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .fab:hover {
+      background: #0056b3;
+    }
+    .info-box {
+      display: none;
+      position: absolute;
+      right: 60px;
+      top: 0;
+      background: white;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 8px;
+      min-width: 200px;
+      font-size: 14px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+    .info-box a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Neshexposure Logo">
+    <h1>Neshexposure Pty Ltd</h1>
+    <p>Your go-to destination for fun with jumping castles!</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+  <div class="hero">
+    Jump into the Fun!
+  </div>
+  <div class="content" id="services">
+    <h2>Our Services</h2>
+    <p>We provide high-quality, safe, and exciting jumping castles for hire in the Gauteng area. Perfect for birthday parties, school events, and any celebration that calls for fun!</p>
+    <div class="buttons">
+      <a href="#contact">Make an Inquiry</a>
+      <a href="#booking">Book Now</a>
+    </div>
+  </div>
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> NeshexposurePtyLtd@gmail.com</p><p><strong>For faster response, please contact us directly on WhatsApp!</strong></p>
+    <p><strong>Phone:</strong> 068-191-5952</p>
+    <p><strong>Location:</strong> Cosmos CT, Roodepoort, Gauteng, South Africa</p>
+    <p><a href="https://wa.me/27681915952" target="_blank">📲 Message us on WhatsApp</a></p>
+  </div>
+  <div class="booking" id="booking">
+    <h2>Booking Request</h2>
+    <p>Use the form below to book a jumping castle for your event:</p><p><strong>Note:</strong> For the fastest response, we recommend sending your booking request via <a href="https://wa.me/27681915952" target="_blank">WhatsApp</a>.</p>
+    <form action="mailto:NeshexposurePtyLtd@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required />
+      <label for="event">Event Date & Location:</label>
+      <textarea id="event" name="event" rows="3" required></textarea>
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" name="notes" rows="3"></textarea>
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </div>
+  
+<div class="content" id="why-hire">
+  <h2>Why You Should Hire a Castle</h2>
+  <p>Jumping castles bring joy, excitement, and energy to any event! They help kids burn off energy in a healthy way, encourage social interaction, and turn an ordinary party into a magical one. It's a safe, fun-filled way to keep children entertained for hours while adults relax and enjoy the celebration.</p>
+  <p><strong>Call to Action:</strong> Don’t miss out – <a href="https://wa.me/27681915952" target="_blank">book a castle now via WhatsApp</a> and make your event unforgettable!</p>
+</div>
+
+
+<div class="content" id="terms-conditions">
+  <h2>Terms and Conditions</h2>
+  <ul>
+    <li>Bookings are subject to availability and confirmation.</li>
+    <li>Full payment must be made prior to delivery.</li>
+    <li>Supervision of children on the jumping castle is required at all times.</li>
+    <li>Clients are responsible for any damage caused during the hire period.</li>
+    <li>Cancellations must be made at least 48 hours in advance to avoid charges.</li>
+    <li>We reserve the right to cancel bookings in the event of severe weather for safety reasons.</li>
+  </ul>
+</div>
+
+<footer>
+    <p>© 2025 Neshexposure Pty Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating Buttons -->
+  
+    </div>
+    <div class="fab" onclick="toggleInfo('phoneInfo')" title="Call">
+      <i class="fas fa-phone-alt"></i>
+      <div class="info-box" id="phoneInfo">
+        <strong>Call Us:</strong><br>
+        <a href="tel:0681915952">068-191-5952</a>
+      </div>
+    </div>
+    <div class="fab" onclick="toggleInfo('emailInfo')" title="Email">
+      <i class="fas fa-envelope"></i>
+      <div class="info-box" id="emailInfo">
+        <strong>Email Us:</strong><br>
+        <a href="mailto:NeshexposurePtyLtd@gmail.com">NeshexposurePtyLtd@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleInfo(id) {
+      document.querySelectorAll('.info-box').forEach(el => {
+        el.style.display = el.id === id && el.style.display !== 'block' ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
